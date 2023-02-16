@@ -29,6 +29,7 @@ namespace ETicaretAPI.Persistence.Repositories
         public async Task<T> GetSingleAsync(Expression<Func<T, bool>> metot)
             => await Table.FirstOrDefaultAsync(metot);
         public async Task<T> GetByIdAsync(string id)
-            => await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
+            => await Table.FindAsync(Guid.Parse(id));
+            //=> await Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
     }
 }
