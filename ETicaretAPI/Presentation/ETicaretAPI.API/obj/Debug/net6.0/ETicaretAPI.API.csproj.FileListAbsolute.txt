@@ -19,7 +19,6 @@ C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETica
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.AssemblyInfoInputs.cache
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.AssemblyInfo.cs
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.csproj.CoreCompileInputs.cache
-C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\ETicaretAPI.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\staticwebassets\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net6.0\staticwebassets\msbuild.build.ETicaretAPI.API.props
