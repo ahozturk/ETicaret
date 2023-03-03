@@ -12,6 +12,6 @@ export class HomeComponent extends BaseComponent implements OnInit{
     super(spinner);
   }
   ngOnInit(): void{
-    this.ShowSpinner(SpinnerType.ball_spin_clockwise_fade_rotating);
+    this.ShowSpinner(SpinnerType.ball_atom);
   }
 }
