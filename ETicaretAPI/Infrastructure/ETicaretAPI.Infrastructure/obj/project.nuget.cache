@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YRqAauaTmEK3QGFd2Isq/Q0bum2OyEDFtPf0H6iTWmmYAB7bq1fDk6T+LBZOFweKzipLrniSiGrVmmCvPyeWeA==",
+  "dgSpecHash": "JenleqT06HFFtJH2mVyuWkPT6QQWgRUvUDzsmmCvHnqQMZ4Yjo7FWWxyZ+6hRCWFVHN1EIPY06bnP0wV6GgRCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Infrastructure\\ETicaretAPI.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ahmet\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.2\\microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.2\\microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.2\\microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",
