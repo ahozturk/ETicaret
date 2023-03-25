@@ -1,32 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\deneme-2.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\deneme-2.txt"
+      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\fatura.txt",
+      "PackagePath": "staticwebassets\\resource\\files\\fatura.txt"
     },
     {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\deneme-3.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\deneme-3.txt"
-    },
-    {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\deneme.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\deneme.txt"
-    },
-    {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\fatura-2.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\fatura-2.txt"
-    },
-    {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\fatura-3.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\fatura-3.txt"
-    },
-    {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\fatura-4.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\fatura-4.txt"
-    },
-    {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\products-images\\fatura.txt",
-      "PackagePath": "staticwebassets\\resource\\products-images\\fatura.txt"
+      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\fileName",
+      "PackagePath": "staticwebassets\\resource\\files"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",
