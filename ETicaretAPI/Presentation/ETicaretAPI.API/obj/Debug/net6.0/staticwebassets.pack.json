@@ -1,12 +1,20 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\fatura.txt",
-      "PackagePath": "staticwebassets\\resource\\files\\fatura.txt"
+      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\files\\faturaasd-2.txt",
+      "PackagePath": "staticwebassets\\files\\faturaasd-2.txt"
     },
     {
-      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\files\\fileName",
-      "PackagePath": "staticwebassets\\resource\\files"
+      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\files\\faturaasd-3.txt",
+      "PackagePath": "staticwebassets\\files\\faturaasd-3.txt"
+    },
+    {
+      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\files\\faturaasd-4.txt",
+      "PackagePath": "staticwebassets\\files\\faturaasd-4.txt"
+    },
+    {
+      "Id": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\files\\faturaasd.txt",
+      "PackagePath": "staticwebassets\\files\\faturaasd.txt"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",
