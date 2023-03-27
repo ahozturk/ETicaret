@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Thm0HR+U0cMxmf0UesTKYdkjgl6n+koRqGx652pRIkIAPB5MraLzAxJhj7nO8igiXcxYwSZp6qxj/LMkTTrH6Q==",
+  "dgSpecHash": "CFAqguveYHiDmesLW8vxIQt+xoBZy0pgOqoUH1itvT2x4NH3iq0hQ0OMyW0ccdQtmjenrqRqCfqn+hO9btnWHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmet\\OneDrive\\Documents\\GitHub\\ETicaret\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj",
   "expectedPackageFiles": [
@@ -48,7 +48,6 @@
     "C:\\Users\\ahmet\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\ahmet\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"

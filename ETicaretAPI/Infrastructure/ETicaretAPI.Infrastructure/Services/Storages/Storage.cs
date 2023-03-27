@@ -20,7 +20,7 @@ namespace ETicaretAPI.Infrastructure.Services.Storages
                    ? $"{NameOperation.CharacterRegulatory(name)}{extention}"
                    : $"{name}{extention}";
 
-                if (hasFileMethod(pathOrContainerName, fileName))
+                if (hasFileMethod(pathOrContainerName, newFileName))
                 {
                     string[] separated = name.Split("-");
                     if (separated.Length > 1)
