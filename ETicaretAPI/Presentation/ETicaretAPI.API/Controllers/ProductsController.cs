@@ -5,6 +5,7 @@ using ETicaretAPI.Application.ViewModels.Products;
 using ETicaretAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Net;
 
 namespace ETicaretAPI.API.Controllers
@@ -23,6 +24,7 @@ namespace ETicaretAPI.API.Controllers
         readonly IInvoiceFileReadRepository _invoiceFileReadRepository;
         readonly IInvoiceFileWriteRepository _invoiceFileWriteRepository;
         readonly IStorageService _storageService;
+        readonly IConfiguration _configuration;
         public ProductsController
             (
                 IProductWriteRepository productWriteRepository,
@@ -34,7 +36,8 @@ namespace ETicaretAPI.API.Controllers
                 IProductImageFileWriteRepository productImageFileWriteRepository,
                 IInvoiceFileReadRepository invoiceFileReadRepository,
                 IInvoiceFileWriteRepository invoiceFileWriteRepository,
-                IStorageService storageService)
+                IStorageService storageService,
+                IConfiguration configuration)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
@@ -46,6 +49,7 @@ namespace ETicaretAPI.API.Controllers
             _invoiceFileReadRepository = invoiceFileReadRepository;
             _invoiceFileWriteRepository = invoiceFileWriteRepository;
             _storageService = storageService;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -64,11 +68,13 @@ namespace ETicaretAPI.API.Controllers
 
             return Ok(new { products, totalCount });
         }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
             return Ok(_productReadRepository.GetByIdAsync(id, false));
         }
+
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
@@ -81,6 +87,7 @@ namespace ETicaretAPI.API.Controllers
             await _productWriteRepository.SaveAsync();
             return StatusCode((int)HttpStatusCode.Created);
         }
+
         [HttpPut]
         public async Task<IActionResult> Put(VM_Update_Product model)
         {
@@ -118,6 +125,18 @@ namespace ETicaretAPI.API.Controllers
             await _productImageFileWriteRepository.SaveAsync();
 
             return Ok();
+        }
+
+        [HttpPost("[action]/{id}")]
+        public async Task<IActionResult> GetProductImages(string id)
+        {
+            Product? product = await _productReadRepository.Table.Include(p => p.ProductImageFiles)
+                .FirstOrDefaultAsync(p => p.Id == Guid.Parse(id));
+            return Ok(product.ProductImageFiles.Select(p => new
+            {
+                path = $"{_configuration["BaseStorageUrl"]}/{p.FileName}",
+                p.FileName
+            }));
         }
     }
 }
