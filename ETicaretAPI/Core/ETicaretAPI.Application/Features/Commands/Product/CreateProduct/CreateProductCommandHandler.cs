@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Features.Commands.CreateProduct
+namespace ETicaretAPI.Application.Features.Commands.Product.CreateProduct
 {
     public class CreateProductCommandHandler : IRequestHandler<CreateProductCommandRequest, CreateProductCommandResponse>
     {
@@ -21,7 +21,7 @@ namespace ETicaretAPI.Application.Features.Commands.CreateProduct
 
         public async Task<CreateProductCommandResponse> Handle(CreateProductCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.AddAsync(new Product()
+            await _productWriteRepository.AddAsync(new ETicaretAPI.Domain.Entities.Product()
             {
                 Name = request.Name,
                 Price = request.Price,
