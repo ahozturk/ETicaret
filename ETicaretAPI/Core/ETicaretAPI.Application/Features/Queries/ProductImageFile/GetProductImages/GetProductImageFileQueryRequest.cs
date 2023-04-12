@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Application.Features.Queries.ProductImageFile.GetProductImages
 {
-    public class GetProductImageFileQueryRequest : IRequest<GetProductImageFileQueryResponse>
+    public class GetProductImageFileQueryRequest : IRequest<List<GetProductImageFileQueryResponse>>
     {
+        public string Id { get; set; }
     }
 }
