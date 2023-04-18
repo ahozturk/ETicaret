@@ -8,7 +8,7 @@ namespace ETicaretAPI.Application.Exceptions
 {
     public class NotFoundUserException : Exception
     {
-        public NotFoundUserException() : this("Kullanıcı Adı veya Şifre Hatalı!")
+        public NotFoundUserException() : base("Kullanıcı Adı veya Şifre Hatalı!")
         {
 
         }

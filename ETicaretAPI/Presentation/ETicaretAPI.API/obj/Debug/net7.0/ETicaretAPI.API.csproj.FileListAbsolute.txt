@@ -62,3 +62,10 @@ C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETica
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\obj\Debug\net7.0\ETicaretAPI.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
