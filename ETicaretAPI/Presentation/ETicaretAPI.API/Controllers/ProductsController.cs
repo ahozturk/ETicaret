@@ -37,7 +37,6 @@ namespace ETicaretAPI.API.Controllers
         readonly IInvoiceFileWriteRepository _invoiceFileWriteRepository;
         readonly IStorageService _storageService;
         readonly IConfiguration _configuration;
-
         readonly IMediator _mediator;
 
         public ProductsController
