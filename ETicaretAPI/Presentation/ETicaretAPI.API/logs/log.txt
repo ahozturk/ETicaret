@@ -1,0 +1,1038 @@
+2023-04-28 15:26:49.882 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 15:26:50.162 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 15:26:50.164 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 15:26:50.166 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 15:26:50.167 +03:00 [INF] Hosting environment: Development
+2023-04-28 15:26:50.168 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 15:27:42.915 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger - -
+2023-04-28 15:27:42.968 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger - - - 301 0 - 54.5636ms
+2023-04-28 15:27:42.975 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/index.html - -
+2023-04-28 15:27:43.128 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/index.html - - - 200 - text/html;charset=utf-8 152.2827ms
+2023-04-28 15:27:43.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/swagger-ui.css - -
+2023-04-28 15:27:43.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/swagger-ui-standalone-preset.js - -
+2023-04-28 15:27:43.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/swagger-ui-bundle.js - -
+2023-04-28 15:27:43.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/_framework/aspnetcore-browser-refresh.js - -
+2023-04-28 15:27:43.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/_vs/browserLink - -
+2023-04-28 15:27:43.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 7.1125ms
+2023-04-28 15:27:43.222 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-04-28 15:27:43.222 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-04-28 15:27:43.222 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-04-28 15:27:43.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/swagger-ui.css - - - 200 143632 text/css 19.5482ms
+2023-04-28 15:27:43.225 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 20.8372ms
+2023-04-28 15:27:43.227 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/swagger-ui-bundle.js - - - 200 1092889 text/javascript 22.6154ms
+2023-04-28 15:27:43.584 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 379.8340ms
+2023-04-28 15:27:43.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/v1/swagger.json - -
+2023-04-28 15:27:43.658 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/favicon-32x32.png - -
+2023-04-28 15:27:43.660 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-04-28 15:27:43.662 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/favicon-32x32.png - - - 200 628 image/png 3.3143ms
+2023-04-28 15:27:43.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.4729ms
+2023-04-28 15:27:48.678 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7074/api/Auth/Login application/json 57
+2023-04-28 15:27:48.683 +03:00 [INF] CORS policy execution failed.
+2023-04-28 15:27:48.684 +03:00 [INF] Request origin https://localhost:7074 does not have permission to access the resource.
+2023-04-28 15:27:48.695 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 15:27:48.714 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 15:27:50.103 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 15:27:50.127 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 15:27:50.146 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1427.8725ms
+2023-04-28 15:27:50.148 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 15:27:50.150 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+ETicaretAPI.Application.Exceptions.NotFoundUserException: Kullanıcı Adı veya Şifre Hatalı!
+   at ETicaretAPI.Persistence.Services.AuthServices.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Infrastructure\ETicaretAPI.Persistence\Services\AuthServices\AuthService.cs:line 94
+   at ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandHandle.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Core\ETicaretAPI.Application\Features\Commands\AppUser\LoginUser\LoginUserCommandHandle.cs:line 25
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at ETicaretAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-28 15:27:50.287 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7074/api/Auth/Login application/json 57 - 500 - text/plain;+charset=utf-8 1608.3502ms
+2023-04-28 16:24:39.954 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:24:40.098 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:24:40.100 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:24:40.103 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:24:40.104 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:24:40.105 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:25:14.204 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products application/json 31
+2023-04-28 16:25:14.702 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-04-28 16:25:14.713 +03:00 [INF] Admin was not authenticated. Failure message: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: 'System.IdentityModel.Tokens.Jwt.JwtSecurityToken'.
+2023-04-28 16:25:14.717 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-04-28 16:25:14.722 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2023-04-28 16:25:14.729 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products application/json 31 - 401 0 - 526.5355ms
+2023-04-28 16:28:36.612 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:28:36.737 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:28:36.739 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:28:36.740 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:28:36.741 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:28:36.742 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:28:57.033 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:28:57.166 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:28:57.167 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:28:57.170 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:28:57.171 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:28:57.171 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:29:02.255 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:29:02.369 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:29:02.371 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:29:02.372 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:29:02.373 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:29:02.374 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:29:32.841 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:29:32.884 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:29:32.903 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:29:34.323 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:29:34.347 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:29:34.571 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:29:34.581 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:29:34.661 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:29:34.679 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:29:34.696 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1789.6486ms
+2023-04-28 16:29:34.699 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:29:34.707 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 1868.0552ms
+2023-04-28 16:29:47.644 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products application/json 31
+2023-04-28 16:29:47.695 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:29:47.699 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:29:47.874 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:29:47.876 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:29:47.915 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:29:47.921 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:29:47.934 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:29:47.936 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:29:47.945 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:29:47.955 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 254.0897ms
+2023-04-28 16:29:47.957 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:29:47.958 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products application/json 31 - 200 - application/json;+charset=utf-8 313.7112ms
+2023-04-28 16:30:58.359 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 107
+2023-04-28 16:30:58.365 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:30:58.367 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:30:58.384 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:30:58.385 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:30:58.390 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+2023-04-28 16:30:58.392 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:30:58.394 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:30:58.396 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:30:58.400 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2023-04-28 16:30:58.402 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 33.084ms
+2023-04-28 16:30:58.404 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:30:58.405 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 107 - 200 - application/json;+charset=utf-8 45.8944ms
+2023-04-28 16:31:06.031 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7074/api/Products/ application/json 107
+2023-04-28 16:31:06.035 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Put (ETicaretAPI.API)'
+2023-04-28 16:31:06.038 +03:00 [INF] Route matched with {action = "Put", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(ETicaretAPI.Application.Features.Commands.Product.UpdateProduct.UpdateProductCommandRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:31:06.062 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__Parse_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedDate", p."Name", p."Price", p."Stock", p."UpdatedDate"
+FROM "Products" AS p
+WHERE p."Id" = @__Parse_0
+LIMIT 1
+2023-04-28 16:31:06.107 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?', @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Name" = @p0, "Stock" = @p1, "UpdatedDate" = @p2
+WHERE "Id" = @p3;
+2023-04-28 16:31:06.110 +03:00 [INF] Product Güncellendi
+2023-04-28 16:31:06.116 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-28 16:31:06.117 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Put (ETicaretAPI.API) in 77.702ms
+2023-04-28 16:31:06.119 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Put (ETicaretAPI.API)'
+2023-04-28 16:31:06.119 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7074/api/Products/ application/json 107 - 200 0 - 88.0242ms
+2023-04-28 16:31:17.020 +03:00 [INF] Request starting HTTP/1.1 PUT https://localhost:7074/api/Products/ application/json 105
+2023-04-28 16:31:17.023 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Put (ETicaretAPI.API)'
+2023-04-28 16:31:17.028 +03:00 [INF] Route matched with {action = "Put", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(ETicaretAPI.Application.Features.Commands.Product.UpdateProduct.UpdateProductCommandRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:31:17.044 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__Parse_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."CreatedDate", p."Name", p."Price", p."Stock", p."UpdatedDate"
+FROM "Products" AS p
+WHERE p."Id" = @__Parse_0
+LIMIT 1
+2023-04-28 16:31:17.069 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?' (DbType = Single), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Products" SET "Price" = @p0, "Stock" = @p1, "UpdatedDate" = @p2
+WHERE "Id" = @p3;
+2023-04-28 16:31:17.074 +03:00 [INF] Product Güncellendi
+2023-04-28 16:31:17.075 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-04-28 16:31:17.076 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Put (ETicaretAPI.API) in 38.8093ms
+2023-04-28 16:31:17.079 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Put (ETicaretAPI.API)'
+2023-04-28 16:31:17.084 +03:00 [INF] Request finished HTTP/1.1 PUT https://localhost:7074/api/Products/ application/json 105 - 200 0 - 64.4333ms
+2023-04-28 16:34:37.790 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:34:37.971 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:34:37.973 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:34:37.975 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:34:37.976 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:34:37.978 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:34:46.386 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:34:46.428 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:34:46.447 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:34:47.568 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:34:47.593 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:34:47.811 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:34:47.819 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:34:47.897 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:34:47.914 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:34:47.931 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1480.2082ms
+2023-04-28 16:34:47.934 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:34:47.942 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 1557.1758ms
+2023-04-28 16:34:59.599 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:34:59.646 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:34:59.651 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:34:59.733 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:34:59.735 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:34:59.767 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:34:59.772 +03:00 [INF] All Products Send!!!
+2023-04-28 16:34:59.773 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:34:59.785 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:34:59.787 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:34:59.796 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:34:59.806 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 152.0017ms
+2023-04-28 16:34:59.807 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:34:59.808 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 209.0200ms
+2023-04-28 16:35:03.961 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:35:03.967 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:35:03.968 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:35:03.986 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:35:03.989 +03:00 [INF] All Products Send!!!
+2023-04-28 16:35:03.990 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:35:03.993 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:35:03.996 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 25.4504ms
+2023-04-28 16:35:03.997 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:35:03.998 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 37.2289ms
+2023-04-28 16:35:04.617 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:35:04.619 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:35:04.620 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:35:04.631 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:35:04.633 +03:00 [INF] All Products Send!!!
+2023-04-28 16:35:04.634 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:35:04.637 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:35:04.639 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 17.0542ms
+2023-04-28 16:35:04.640 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:35:04.642 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 24.9735ms
+2023-04-28 16:35:05.217 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:35:05.218 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:35:05.219 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:35:05.224 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:35:05.227 +03:00 [INF] All Products Send!!!
+2023-04-28 16:35:05.227 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:35:05.231 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:35:05.234 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 12.6268ms
+2023-04-28 16:35:05.235 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:35:05.236 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 19.1767ms
+2023-04-28 16:38:07.251 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:38:07.380 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:38:07.381 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:38:07.383 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:38:07.384 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:38:07.385 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:38:15.653 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:38:15.697 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:38:15.716 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:38:16.882 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:38:16.910 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:38:17.156 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:38:17.165 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:38:17.248 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:38:17.264 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:38:17.280 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1560.5781ms
+2023-04-28 16:38:17.282 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:38:17.292 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 1641.0498ms
+2023-04-28 16:38:26.183 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:38:26.229 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:38:26.234 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:38:26.317 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:38:26.318 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:38:26.351 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:38:26.355 +03:00 [INF] All Products Send!!!
+2023-04-28 16:38:26.357 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:38:26.369 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:38:26.370 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:38:26.379 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:38:26.391 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 155.0203ms
+2023-04-28 16:38:26.392 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:38:26.394 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 211.0827ms
+2023-04-28 16:40:35.013 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:40:35.129 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:40:35.131 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:40:35.133 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:40:35.134 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:40:35.135 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:40:35.559 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/index.html - -
+2023-04-28 16:40:35.710 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/index.html - - - 200 - text/html;charset=utf-8 152.2199ms
+2023-04-28 16:40:35.742 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/swagger-ui.css - -
+2023-04-28 16:40:35.755 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-04-28 16:40:35.756 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/swagger-ui.css - - - 200 143632 text/css 14.4601ms
+2023-04-28 16:40:35.761 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/_vs/browserLink - -
+2023-04-28 16:40:35.761 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/_framework/aspnetcore-browser-refresh.js - -
+2023-04-28 16:40:35.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.3752ms
+2023-04-28 16:40:35.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.0327ms
+2023-04-28 16:40:35.886 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/swagger-ui-standalone-preset.js - -
+2023-04-28 16:40:35.892 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-04-28 16:40:35.894 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/swagger-ui-standalone-preset.js - - - 200 337162 text/javascript 7.9534ms
+2023-04-28 16:40:35.955 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/v1/swagger.json - -
+2023-04-28 16:40:35.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/favicon-32x32.png - -
+2023-04-28 16:40:35.992 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-04-28 16:40:35.995 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/favicon-32x32.png - - - 200 628 image/png 4.7802ms
+2023-04-28 16:40:36.045 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.0818ms
+2023-04-28 16:45:41.626 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:45:41.779 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:45:41.780 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:45:41.783 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:45:41.784 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:45:41.784 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:45:48.093 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:45:48.131 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 72
+Postman-Token: [Redacted]
+2023-04-28 16:45:48.147 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:45:48.169 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:45:48.189 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "hakan@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 16:45:49.471 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:45:49.501 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:45:49.733 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:45:49.742 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:45:49.825 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:45:49.843 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:45:49.855 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:45:49.862 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1689.1447ms
+2023-04-28 16:45:49.864 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:45:49.866 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWhvYXp0dXJrIiwibmJmIjoxNjgyNjg5NTQ5LCJleHAiOjE2ODI2ODk3MDksImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.az3AcPsVxnapadkTkoeEGjnFnu7eegzSUbqPLRRoqK0","expiration":"2023-04-28T13:48:29.6644032Z","refreshToken":"dv8ZWaAUrmPid6sGsZyvttIAaY9aUs3K4w2dyTvRoXA="}}
+2023-04-28 16:45:49.877 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 1786.1998ms
+2023-04-28 16:46:17.891 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:46:17.894 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 72
+Postman-Token: [Redacted]
+2023-04-28 16:46:17.898 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:46:17.899 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:46:17.903 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "hakan@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 16:46:17.952 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:46:17.957 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:46:18.034 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:46:18.040 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:46:18.049 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:46:18.053 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:46:18.056 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:46:18.057 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 155.0818ms
+2023-04-28 16:46:18.058 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:46:18.060 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWhvYXp0dXJrIiwibmJmIjoxNjgyNjg5NTc4LCJleHAiOjE2ODI2ODk3MzgsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.g2X7YyHyV3TWO3C7k0l_KkE79tU1pF7Px3GmgcP9EIA","expiration":"2023-04-28T13:48:58.0320922Z","refreshToken":"LS5lXlPabPuz01z84WtHPIssE0Vu+akou18XGVan6OA="}}
+2023-04-28 16:46:18.062 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 171.5725ms
+2023-04-28 16:46:39.215 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:46:39.220 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 31
+Postman-Token: [Redacted]
+2023-04-28 16:46:39.266 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:46:39.272 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:46:39.304 +03:00 [INF] RequestBody: {
+  "page": 1,
+  "size": 6
+}
+2023-04-28 16:46:39.331 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:46:39.332 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:46:39.367 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:46:39.372 +03:00 [INF] All Products Send!!!
+2023-04-28 16:46:39.374 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:46:39.386 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:46:39.387 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:46:39.398 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:46:39.406 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:46:39.408 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 133.5975ms
+2023-04-28 16:46:39.410 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:46:39.410 +03:00 [INF] ResponseBody: {"totalCount":6,"products":[{"id":"32aa7605-b4ff-480f-9706-bc88a86e885d","name":"Product 6","stock":7,"price":7,"createdDate":"2023-03-13T10:55:13.215073Z","updatedDate":"0001-01-01T00:00:00"},{"id":"8b4a33b7-b671-4351-8108-c697ea5e5e90","name":"Product 8","stock":8,"price":8,"createdDate":"2023-03-13T10:55:29.404585Z","updatedDate":"0001-01-01T00:00:00"},{"id":"258fe1d5-923c-49aa-9582-f44b54d8c300","name":"Product 9","stock":9,"price":9,"createdDate":"2023-03-13T10:55:33.707135Z","updatedDate":"0001-01-01T00:00:00"},{"id":"90278710-7efd-41ab-98dd-b2aff458ad1a","name":"Product 10","stock":10,"price":10,"createdDate":"2023-03-13T10:55:40.348088Z","updatedDate":"0001-01-01T00:00:00"},{"id":"98a469cf-1bfb-4abc-9f27-7efb77e0dea8","name":"Product 11","stock":11,"price":11,"createdDate":"2023-03-13T10:55:44.411247Z","updatedDate":"0001-01-01T00:00:00"},{"id":"13552eeb-7176-4349-811f-43326ed08b3f","name":"Product 12","stock":12,"price":12,"createdDate":"2023-03-13T10:55:48.963805Z","updatedDate":"0001-01-01T00:00:00"}]}
+2023-04-28 16:46:39.412 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 197.3414ms
+2023-04-28 16:47:14.417 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:47:14.530 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:47:14.531 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:47:14.533 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:47:14.534 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:47:14.534 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:47:14.889 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/index.html - -
+2023-04-28 16:47:15.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/index.html - - - 200 - text/html;charset=utf-8 150.7886ms
+2023-04-28 16:47:15.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/_vs/browserLink - -
+2023-04-28 16:47:15.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/_framework/aspnetcore-browser-refresh.js - -
+2023-04-28 16:47:15.077 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.9916ms
+2023-04-28 16:47:15.088 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.5887ms
+2023-04-28 16:47:15.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7074/swagger/v1/swagger.json - -
+2023-04-28 16:47:15.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7074/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.4569ms
+2023-04-28 16:47:16.918 +03:00 [INF] Application is shutting down...
+2023-04-28 16:47:21.396 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:47:21.515 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:47:21.517 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:47:21.518 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:47:21.519 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:47:21.520 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:47:34.402 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:47:34.442 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 72
+Postman-Token: [Redacted]
+2023-04-28 16:47:34.454 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:47:34.474 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:47:34.495 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "hakan@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 16:47:35.883 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:47:35.908 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:47:36.482 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:47:36.489 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:47:36.569 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:47:36.587 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:47:36.598 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:47:36.604 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 2125.5557ms
+2023-04-28 16:47:36.605 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:47:36.607 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWhvYXp0dXJrIiwibmJmIjoxNjgyNjg5NjU2LCJleHAiOjE2ODI2ODk4MTYsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.wzgEIfY8qO1QJoxrByQqsndp0saI6ycsjQ598rOwESo","expiration":"2023-04-28T13:50:16.3102053Z","refreshToken":"wP35M2OMtQ9zgh7g+AsMrujZGWASqY52XyIAv+ZiRKk="}}
+2023-04-28 16:47:36.617 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 2216.9998ms
+2023-04-28 16:47:43.236 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:47:43.242 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 31
+Postman-Token: [Redacted]
+2023-04-28 16:47:43.394 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:47:43.399 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:47:43.508 +03:00 [INF] RequestBody: {
+  "page": 1,
+  "size": 6
+}
+2023-04-28 16:47:43.562 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:47:43.564 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:47:43.596 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:47:43.602 +03:00 [INF] All Products Send!!!
+2023-04-28 16:47:43.603 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:47:43.616 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:47:43.617 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:47:43.626 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:47:43.634 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:47:43.637 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 236.2281ms
+2023-04-28 16:47:43.638 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:47:43.639 +03:00 [INF] ResponseBody: {"totalCount":6,"products":[{"id":"32aa7605-b4ff-480f-9706-bc88a86e885d","name":"Product 6","stock":7,"price":7,"createdDate":"2023-03-13T10:55:13.215073Z","updatedDate":"0001-01-01T00:00:00"},{"id":"8b4a33b7-b671-4351-8108-c697ea5e5e90","name":"Product 8","stock":8,"price":8,"createdDate":"2023-03-13T10:55:29.404585Z","updatedDate":"0001-01-01T00:00:00"},{"id":"258fe1d5-923c-49aa-9582-f44b54d8c300","name":"Product 9","stock":9,"price":9,"createdDate":"2023-03-13T10:55:33.707135Z","updatedDate":"0001-01-01T00:00:00"},{"id":"90278710-7efd-41ab-98dd-b2aff458ad1a","name":"Product 10","stock":10,"price":10,"createdDate":"2023-03-13T10:55:40.348088Z","updatedDate":"0001-01-01T00:00:00"},{"id":"98a469cf-1bfb-4abc-9f27-7efb77e0dea8","name":"Product 11","stock":11,"price":11,"createdDate":"2023-03-13T10:55:44.411247Z","updatedDate":"0001-01-01T00:00:00"},{"id":"13552eeb-7176-4349-811f-43326ed08b3f","name":"Product 12","stock":12,"price":12,"createdDate":"2023-03-13T10:55:48.963805Z","updatedDate":"0001-01-01T00:00:00"}]}
+2023-04-28 16:47:43.641 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 405.1321ms
+2023-04-28 16:48:29.592 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:48:29.594 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 72
+Postman-Token: [Redacted]
+2023-04-28 16:48:29.597 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:48:29.598 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:48:29.600 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "hakan@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 16:48:29.616 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:48:29.620 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:48:29.698 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:48:29.702 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:48:29.711 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:48:29.715 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:48:29.717 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:48:29.718 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 118.2298ms
+2023-04-28 16:48:29.719 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:48:29.720 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWhvYXp0dXJrIiwibmJmIjoxNjgyNjg5NzA5LCJleHAiOjE2ODI2ODk4NjksImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.msjBLv62Qk5x8kUGMqISU3L6kiNZ1_bUTDUOZUTRKfQ","expiration":"2023-04-28T13:51:09.695339Z","refreshToken":"3YvlyMVnUvyA8CHLbbETc/C3v1PdN23Iplz7CLzRM9w="}}
+2023-04-28 16:48:29.722 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 129.5533ms
+2023-04-28 16:48:41.394 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:48:41.395 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 31
+Postman-Token: [Redacted]
+2023-04-28 16:48:41.398 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:48:41.399 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:48:41.403 +03:00 [INF] RequestBody: {
+  "page": 1,
+  "size": 6
+}
+2023-04-28 16:48:41.408 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:48:41.410 +03:00 [INF] All Products Send!!!
+2023-04-28 16:48:41.411 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:48:41.414 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:48:41.417 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:48:41.417 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 16.3884ms
+2023-04-28 16:48:41.418 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:48:41.419 +03:00 [INF] ResponseBody: {"totalCount":6,"products":[{"id":"32aa7605-b4ff-480f-9706-bc88a86e885d","name":"Product 6","stock":7,"price":7,"createdDate":"2023-03-13T10:55:13.215073Z","updatedDate":"0001-01-01T00:00:00"},{"id":"8b4a33b7-b671-4351-8108-c697ea5e5e90","name":"Product 8","stock":8,"price":8,"createdDate":"2023-03-13T10:55:29.404585Z","updatedDate":"0001-01-01T00:00:00"},{"id":"258fe1d5-923c-49aa-9582-f44b54d8c300","name":"Product 9","stock":9,"price":9,"createdDate":"2023-03-13T10:55:33.707135Z","updatedDate":"0001-01-01T00:00:00"},{"id":"90278710-7efd-41ab-98dd-b2aff458ad1a","name":"Product 10","stock":10,"price":10,"createdDate":"2023-03-13T10:55:40.348088Z","updatedDate":"0001-01-01T00:00:00"},{"id":"98a469cf-1bfb-4abc-9f27-7efb77e0dea8","name":"Product 11","stock":11,"price":11,"createdDate":"2023-03-13T10:55:44.411247Z","updatedDate":"0001-01-01T00:00:00"},{"id":"13552eeb-7176-4349-811f-43326ed08b3f","name":"Product 12","stock":12,"price":12,"createdDate":"2023-03-13T10:55:48.963805Z","updatedDate":"0001-01-01T00:00:00"}]}
+2023-04-28 16:48:41.421 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 27.4429ms
+2023-04-28 16:52:16.232 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 16:52:16.344 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 16:52:16.346 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 16:52:16.347 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 16:52:16.348 +03:00 [INF] Hosting environment: Development
+2023-04-28 16:52:16.349 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 16:52:20.092 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72
+2023-04-28 16:52:20.127 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 72
+Postman-Token: [Redacted]
+2023-04-28 16:52:20.139 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:52:20.159 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:52:20.179 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "hakan@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 16:52:21.294 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:52:21.318 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:52:21.567 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:52:21.575 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:52:21.655 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:52:21.671 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:52:21.683 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:52:21.689 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1524.9413ms
+2023-04-28 16:52:21.690 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:52:21.693 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWhvYXp0dXJrIiwibmJmIjoxNjgyNjg5OTQxLCJleHAiOjE2ODI2OTAxMDEsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.GYfumTTHE5ySm6mF8RIbehXlGsPVfxZeCKo7okRgjxM","expiration":"2023-04-28T13:55:01.4770019Z","refreshToken":"br+iv4G8aU2HdHqIxzwrjKAXjFsqMTkDO3H9D0Haflc="}}
+2023-04-28 16:52:21.703 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 72 - 200 - application/json;+charset=utf-8 1612.6754ms
+2023-04-28 16:52:27.760 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:52:27.765 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 31
+Postman-Token: [Redacted]
+2023-04-28 16:52:27.807 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:52:27.812 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:52:27.842 +03:00 [INF] RequestBody: {
+  "page": 1,
+  "size": 6
+}
+2023-04-28 16:52:27.897 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:52:27.899 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:52:27.932 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:52:27.937 +03:00 [INF] All Products Send!!!
+2023-04-28 16:52:27.938 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:52:27.951 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:52:27.952 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-04-28 16:52:27.961 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:52:27.970 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:52:27.974 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 160.1389ms
+2023-04-28 16:52:27.976 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:52:27.977 +03:00 [INF] ResponseBody: {"totalCount":6,"products":[{"id":"32aa7605-b4ff-480f-9706-bc88a86e885d","name":"Product 6","stock":7,"price":7,"createdDate":"2023-03-13T10:55:13.215073Z","updatedDate":"0001-01-01T00:00:00"},{"id":"8b4a33b7-b671-4351-8108-c697ea5e5e90","name":"Product 8","stock":8,"price":8,"createdDate":"2023-03-13T10:55:29.404585Z","updatedDate":"0001-01-01T00:00:00"},{"id":"258fe1d5-923c-49aa-9582-f44b54d8c300","name":"Product 9","stock":9,"price":9,"createdDate":"2023-03-13T10:55:33.707135Z","updatedDate":"0001-01-01T00:00:00"},{"id":"90278710-7efd-41ab-98dd-b2aff458ad1a","name":"Product 10","stock":10,"price":10,"createdDate":"2023-03-13T10:55:40.348088Z","updatedDate":"0001-01-01T00:00:00"},{"id":"98a469cf-1bfb-4abc-9f27-7efb77e0dea8","name":"Product 11","stock":11,"price":11,"createdDate":"2023-03-13T10:55:44.411247Z","updatedDate":"0001-01-01T00:00:00"},{"id":"13552eeb-7176-4349-811f-43326ed08b3f","name":"Product 12","stock":12,"price":12,"createdDate":"2023-03-13T10:55:48.963805Z","updatedDate":"0001-01-01T00:00:00"}]}
+2023-04-28 16:52:27.979 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 219.6251ms
+2023-04-28 16:52:54.029 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 73
+2023-04-28 16:52:54.031 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 73
+Postman-Token: [Redacted]
+2023-04-28 16:52:54.034 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:52:54.035 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 16:52:54.037 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "mehmet@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 16:52:54.053 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:52:54.057 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:52:54.133 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 16:52:54.138 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 16:52:54.147 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 16:52:54.151 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 16:52:54.152 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:52:54.153 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 116.6526ms
+2023-04-28 16:52:54.155 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 16:52:54.156 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0IiwibmJmIjoxNjgyNjg5OTc0LCJleHAiOjE2ODI2OTAxMzQsImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.V4E9bI5cs4K2Tcs4V6vIS5DMQriCpxzk_FukOnkM9oo","expiration":"2023-04-28T13:55:34.1311028Z","refreshToken":"3YW3bFn9K1XvCRwjo7NirEdwBYPgF9h7RrGeWKq/rWU="}}
+2023-04-28 16:52:54.158 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 73 - 200 - application/json;+charset=utf-8 128.1860ms
+2023-04-28 16:53:02.259 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31
+2023-04-28 16:53:02.260 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/Products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Content-Type: application/json
+Content-Length: 31
+Postman-Token: [Redacted]
+2023-04-28 16:53:02.264 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:53:02.265 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryRequest) on controller ETicaretAPI.API.Controllers.ProductsController (ETicaretAPI.API).
+2023-04-28 16:53:02.269 +03:00 [INF] RequestBody: {
+  "page": 1,
+  "size": 6
+}
+2023-04-28 16:53:02.273 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM (
+    SELECT p."Id"
+    FROM "Products" AS p
+    LIMIT @__p_0 OFFSET @__p_0
+) AS t
+2023-04-28 16:53:02.276 +03:00 [INF] All Products Send!!!
+2023-04-28 16:53:02.277 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Queries.Product.GetAllProduct.GetAllProductQueryResponse'.
+2023-04-28 16:53:02.280 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_0 OFFSET @__p_0
+2023-04-28 16:53:02.283 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 16:53:02.284 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API) in 18.097ms
+2023-04-28 16:53:02.285 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.ProductsController.Get (ETicaretAPI.API)'
+2023-04-28 16:53:02.286 +03:00 [INF] ResponseBody: {"totalCount":6,"products":[{"id":"32aa7605-b4ff-480f-9706-bc88a86e885d","name":"Product 6","stock":7,"price":7,"createdDate":"2023-03-13T10:55:13.215073Z","updatedDate":"0001-01-01T00:00:00"},{"id":"8b4a33b7-b671-4351-8108-c697ea5e5e90","name":"Product 8","stock":8,"price":8,"createdDate":"2023-03-13T10:55:29.404585Z","updatedDate":"0001-01-01T00:00:00"},{"id":"258fe1d5-923c-49aa-9582-f44b54d8c300","name":"Product 9","stock":9,"price":9,"createdDate":"2023-03-13T10:55:33.707135Z","updatedDate":"0001-01-01T00:00:00"},{"id":"90278710-7efd-41ab-98dd-b2aff458ad1a","name":"Product 10","stock":10,"price":10,"createdDate":"2023-03-13T10:55:40.348088Z","updatedDate":"0001-01-01T00:00:00"},{"id":"98a469cf-1bfb-4abc-9f27-7efb77e0dea8","name":"Product 11","stock":11,"price":11,"createdDate":"2023-03-13T10:55:44.411247Z","updatedDate":"0001-01-01T00:00:00"},{"id":"13552eeb-7176-4349-811f-43326ed08b3f","name":"Product 12","stock":12,"price":12,"createdDate":"2023-03-13T10:55:48.963805Z","updatedDate":"0001-01-01T00:00:00"}]}
+2023-04-28 16:53:02.288 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 200 - application/json;+charset=utf-8 29.4875ms
+2023-04-28 22:16:33.649 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-28 22:16:33.782 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-28 22:16:33.784 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-28 22:16:33.786 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 22:16:33.787 +03:00 [INF] Hosting environment: Development
+2023-04-28 22:16:33.787 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API
+2023-04-28 22:16:48.035 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 73
+2023-04-28 22:16:48.073 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7074
+User-Agent: PostmanRuntime/7.32.2
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 73
+Postman-Token: [Redacted]
+2023-04-28 22:16:48.087 +03:00 [INF] Executing endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 22:16:48.104 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandRequest) on controller ETicaretAPI.API.Controllers.AuthController (ETicaretAPI.API).
+2023-04-28 22:16:48.125 +03:00 [INF] RequestBody: {
+    "UsernameOrEmail": "mehmet@gmail.com",
+    "Password": "sifre"
+}
+2023-04-28 22:16:49.352 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 22:16:49.378 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 22:16:49.607 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-04-28 22:16:49.615 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2023-04-28 22:16:49.696 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2023-04-28 22:16:49.716 +03:00 [INF] Executing OkObjectResult, writing value of type 'ETicaretAPI.Application.Features.Commands.AppUser.LoginUser.LoginUserCommandResponse'.
+2023-04-28 22:16:49.735 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2023-04-28 22:16:49.740 +03:00 [INF] Executed action ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API) in 1631.8429ms
+2023-04-28 22:16:49.743 +03:00 [INF] Executed endpoint 'ETicaretAPI.API.Controllers.AuthController.Login (ETicaretAPI.API)'
+2023-04-28 22:16:49.745 +03:00 [INF] ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0IiwibmJmIjoxNjgyNzA5NDA5LCJleHAiOjE2ODI3MDk1NjksImlzcyI6Ind3dy5teWFwaS5jb20iLCJhdWQiOiJ3d3cuaGFrYW4uY29tIn0.P-a3f5VafHDlfzcahAlGdVKoXD-uU03a1WyEPDQlCLk","expiration":"2023-04-28T19:19:29.542409Z","refreshToken":"zkYbDh+6jQRb1NbO56JgqxgT7MaoYbmhk8oUsVSKUXE="}}
+2023-04-28 22:16:49.754 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7074/api/auth/login application/json 73 - 200 - application/json;+charset=utf-8 1720.5982ms

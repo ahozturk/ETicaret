@@ -65,7 +65,7 @@ namespace ETicaretAPI.Persistence.Services.AuthServices
             else
                 throw new Exception("Invalid External Authentication");
 
-            Token token = _tokenHandler.CreateAccessToken(15*60);
+            Token token = _tokenHandler.CreateAccessToken(15*60, user);
             await _userService.UpdateResfreshToken(token.RefreshToken, user, token.Expiration, 5);
             return token;
         }
@@ -96,7 +96,7 @@ namespace ETicaretAPI.Persistence.Services.AuthServices
 
             if (result.Succeeded)
             {
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, appUser);
                 await _userService.UpdateResfreshToken(token.RefreshToken, appUser, token.Expiration, 40);
                 return token;
 
@@ -110,7 +110,7 @@ namespace ETicaretAPI.Persistence.Services.AuthServices
 
             if (appUser != null && appUser.RefreshTokenEndDate > DateTime.UtcNow)
             {
-                Token token = _tokenHandler.CreateAccessToken(15);
+                Token token = _tokenHandler.CreateAccessToken(15, appUser);
                 await _userService.UpdateResfreshToken(token.RefreshToken, appUser, token.Expiration, 10);
                 return token;
             }

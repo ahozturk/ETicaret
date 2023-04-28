@@ -24,7 +24,7 @@ namespace ETicaretAPI.Application.Features.Commands.AppUser.LoginUser
         {
             return new()
             {
-                Token = await _internalAuthentication.LoginAsync(request.UsernameOrEmail, request.Password, 30)
+                Token = await _internalAuthentication.LoginAsync(request.UsernameOrEmail, request.Password, 160)
             };
         }
     }
