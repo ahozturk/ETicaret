@@ -1,4 +1,5 @@
-﻿using Google.Apis.Auth;
+﻿using ETicaretAPI.Application.Abstractions.Services.Authentications;
+using ETicaretAPI.Application.Abstractions.Token;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -11,30 +12,17 @@ namespace ETicaretAPI.Application.Features.Commands.AppUser.GoogleLogin
 {
     public class GoogleLoginCommandHandler : IRequestHandler<GoogleLoginCommandRequest, GoogleLoginCommandResponse>
     {
-        readonly UserManager<Domain.Entities.Identity.AppUser> _userManager;
+        readonly Abstractions.Services.Authentications.IExternalAuthentication _externalAuthentication;
 
-        public GoogleLoginCommandHandler(UserManager<Domain.Entities.Identity.AppUser> userManager)
+        public GoogleLoginCommandHandler(IExternalAuthentication externalAuthentication)
         {
-            _userManager = userManager;
+            _externalAuthentication = externalAuthentication;
         }
 
         public async Task<GoogleLoginCommandResponse> Handle(GoogleLoginCommandRequest request, CancellationToken cancellationToken)
         {
-            var settings = new GoogleJsonWebSignature.ValidationSettings()
-            {
-                Audience = new List<string>() { "100272895867-6nb6lvephj9nhfcm7eibpfb0ob1bdvi5.apps.googleusercontent.com" }
-            };
-            var payload = await GoogleJsonWebSignature.ValidateAsync(request.IdToken, settings);
-
-            var info = new UserLoginInfo(request.Provider, payload.Subject, request.Provider);
-            Domain.Entities.Identity.AppUser user = await _userManager.FindByLoginAsync(info.LoginProvider, info.ProviderKey);
-
-            if (user == null)
-            {
-                user = await _userManager.FindByEmailAsync(payload.Email);
-                if (user == null)
-                    await _userManager.CreateAsync(user);
-            }
+            DTOs.Token token = await _externalAuthentication.GoogleLoginAsync(request.IdToken, 15);
+            return new() { Token= token }; 
         }
     }
 }
