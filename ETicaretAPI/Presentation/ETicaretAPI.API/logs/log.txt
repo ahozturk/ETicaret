@@ -1584,3 +1584,9 @@ System.Exception: Noluyo oluuum!
 2023-04-29 02:43:06.972 +03:00 [ERR] Noluyo oluuum!
 2023-04-29 02:43:06.976 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7074/api/Products/ application/json 31 - 500 - application/json 108.0572ms
 2023-04-29 02:44:11.223 +03:00 [INF] Application is shutting down...
+2023-04-30 11:50:21.598 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-30 11:50:21.868 +03:00 [INF] Now listening on: https://localhost:7074
+2023-04-30 11:50:21.870 +03:00 [INF] Now listening on: http://localhost:5065
+2023-04-30 11:50:21.872 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-30 11:50:21.873 +03:00 [INF] Hosting environment: Development
+2023-04-30 11:50:21.874 +03:00 [INF] Content root path: C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API

@@ -86,3 +86,5 @@ C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETica
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Serilog.Sinks.File.dll
 C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\Serilog.Sinks.Seq.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\ETicaretAPI.SignalR.dll
+C:\Users\ahmet\OneDrive\Documents\GitHub\ETicaret\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net7.0\ETicaretAPI.SignalR.pdb
