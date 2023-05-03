@@ -1,6 +1,6 @@
 # ETicaret
 
-Gençay Yıldız'ın Asp.NET Core 6 + Angular İle Mini E-Ticaret serisinin uygulaması.
+Gençay Yıldız'ın Asp.NET Core 6 + Angular İle Mini E-Ticaret serisinin uygulaması. Onion Architecture.
 
 [Gençay Yıldız](https://www.youtube.com/@GencayYildiz)
 
